@@ -5,16 +5,16 @@
 @section('content')
 
 <div id="search-container" class="col-md-12">
-    <h1>Busque um evento</h1>
+    <h3>Busque um evento</h3>
     <form action="/" method="GET">
         <input type="text" id="search" name="search" class="form-control" placeholder="Procurar...">
     </form>
 </div>
 <div id="events-container" class="col-md-12">
     @if($search)
-    <h2>Buscando por: {{ $search }}</h2>
+    <h3>Buscando por: {{ $search }}</h3>
     @else
-    <h2>Próximos Eventos</h2>
+    <h3>Próximos Eventos</h3>
     <p class="subtitle">Veja os eventos dos próximos dias</p>
     @endif
     <div id="cards-container" class="row">
